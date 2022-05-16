@@ -6,7 +6,7 @@ import 'package:yaml/yaml.dart';
 void main(List<String> args) => grind(args);
 
 @DefaultTask()
-Future<void> activate() async {
+void activate() {
   final pubspec = loadYaml(
     File('pubspec.yaml').readAsStringSync(),
   ) as YamlMap;
@@ -19,7 +19,7 @@ Future<void> activate() async {
       continue;
     }
     log('=====');
-    final results = await runAsync(
+    run(
       'dart',
       arguments: [
         'pub',
@@ -28,6 +28,5 @@ Future<void> activate() async {
         e,
       ],
     );
-    log(results);
   }
 }
