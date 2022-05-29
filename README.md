@@ -1,3 +1,3 @@
-# dart_pub_global
+# global
 
-`dart pub global`で利用しているパッケージ群のバージョンをDependabotでチェックしてもらうためのもの
+グローバルパッケージ群のバージョンを Dependabot でチェックしてもらうためのもの

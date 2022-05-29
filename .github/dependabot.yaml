@@ -2,7 +2,12 @@ version: 2
 enable-beta-ecosystems: true
 updates:
   - package-ecosystem: "pub"
-    directory: "/"
+    directory: "/dart"
     schedule:
-      interval: "weekly"
+      interval: "daily"
+    open-pull-requests-limit: 10
+  - package-ecosystem: "npm"
+    directory: "/npm"
+    schedule:
+      interval: "daily"
     open-pull-requests-limit: 10
