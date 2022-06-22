@@ -253,13 +253,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.2"
-  grinder:
-    dependency: "direct main"
-    description:
-      name: grinder
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.9.1"
   http:
     dependency: transitive
     description:
