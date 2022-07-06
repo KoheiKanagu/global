@@ -10,4 +10,5 @@ dependencies:
   fvm: ^2.3.1
   yaml: ^3.1.0
 dev_dependencies:
+  grinder: ^0.9.2
   pedantic_mono: any
