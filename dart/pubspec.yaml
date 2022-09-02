@@ -10,4 +10,4 @@ dependencies:
   yaml: ^3.1.0
 dev_dependencies:
   grinder: ^0.9.2
-  pedantic_mono: any
+  pedantic_mono: ^1.20.0
