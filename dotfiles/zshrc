@@ -10,7 +10,7 @@ else
 fi
 
 MY_NAME=$(uname -n)
-DOTFILES_DIR=~/Develop/dotfiles
+DOTFILES_DIR=~/Develop/global/dotfiles
 
 if [[ $MY_NAME == "Ks-iMac.local" ]]; then
     export HOMEBREW_BUNDLE_FILE=$DOTFILES_DIR/Brewfile_client
