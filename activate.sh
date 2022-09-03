@@ -3,4 +3,4 @@ set -euxo pipefail
 
 dart main.dart
 
-cd npm && npm install --location=global
+jq ".dependencies | keys | .[]" <npm/package.json | xargs -I DEPS npm install --global DEPS
