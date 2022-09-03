@@ -14,7 +14,7 @@ rm ~/.ssh/config && ln -s ~/Develop/global/dotfiles/config ~/.ssh/config
 ## dotfiles
 
 ```sh
-mkdir ~/Develop && cd ~/Develop && git close git@github.com:KoheiKanagu/global.git
+mkdir ~/Develop && cd ~/Develop && git clone git@github.com:KoheiKanagu/global.git
 ```
 
 ## Homebrew
