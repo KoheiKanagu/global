@@ -104,4 +104,4 @@ else
 fi
 
 # Chrome
-export CHROME_EXECUTABLE=$HOME/Develop/dotfiles/google-chrome-unsafe.sh
+export CHROME_EXECUTABLE=$HOME/Develop/global/dotfiles/google-chrome-unsafe.sh
