@@ -1,0 +1,10 @@
+name: Reboot lima VM
+command: |
+  VM_NAME={{name}}
+  limactl stop $VM_NAME
+  sleep 1
+  limactl start $VM_NAME
+description: "limaVMを再起動する"
+arguments:
+  - name: name
+    description: VM name
