@@ -10,14 +10,14 @@ else
 fi
 
 MY_NAME=$(uname -n)
-DOTFILES_DIR=~/Develop/global/dotfiles
+DOTFILES_DIR=~/Develop/global
 
 if [[ $MY_NAME == "Ks-iMac.local" ]]; then
-    export HOMEBREW_BUNDLE_FILE=$DOTFILES_DIR/Brewfile_client
+    export HOMEBREW_BUNDLE_FILE=$DOTFILES_DIR/dotfiles/Brewfile_client
 elif [[ $MY_NAME == "Ks-M1-Mac-mini.local" ]]; then
-    export HOMEBREW_BUNDLE_FILE=$DOTFILES_DIR/Brewfile_server
+    export HOMEBREW_BUNDLE_FILE=$DOTFILES_DIR/dotfiles/Brewfile_server
 else
-    export HOMEBREW_BUNDLE_FILE=$DOTFILES_DIR/Brewfile_client
+    export HOMEBREW_BUNDLE_FILE=$DOTFILES_DIR/dotfiles/Brewfile_client
 fi
 
 export HOMEBREW_BUNDLE_NO_LOCK=true
