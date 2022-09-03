@@ -41,6 +41,7 @@ cask "iina"
 cask "slack"
 cask "the-unarchiver"
 cask "visual-studio-code"
+cask "warp"
 mas "AmorphousDiskMark", id: 1168254295
 mas "Apple Configurator", id: 1037126344
 mas "DevCleaner", id: 1388020431
