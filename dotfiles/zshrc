@@ -28,7 +28,7 @@ function brewpush() {
 }
 
 function brewpull() {
-    (cd $DOTFILES_DIR && git pull --rebase && brew bundle)
+    (cd $DOTFILES_DIR && git pull --rebase && brew bundle && ./activate.sh)
 }
 
 # gi
