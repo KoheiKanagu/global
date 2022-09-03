@@ -35,11 +35,16 @@ function brewpull() {
 function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$@; }
 
 # nvm
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-if [ -e "$NVM_DIR/nvm.sh" ]; then
-    alias nvm='unalias nvm node npm && . "$NVM_DIR"/nvm.sh && nvm'
-    alias node='unalias nvm node npm && . "$NVM_DIR"/nvm.sh && node'
-    alias npm='unalias nvm node npm && . "$NVM_DIR"/nvm.sh && npm'
+export NVM_DIR="$HOME/.nvm"
+if [[ $ARCH == "arm64" ]]; then
+    NVM_BREW_DIR="/opt/homebrew/opt/nvm"
+else
+    NVM_BREW_DIR="/usr/local/opt/nvm"
+fi
+if [ -e "$NVM_BREW_DIR/nvm.sh" ]; then
+    alias nvm='unalias nvm node npm && . "$NVM_BREW_DIR"/nvm.sh && nvm'
+    alias node='unalias nvm node npm && . "$NVM_BREW_DIR"/nvm.sh && node'
+    alias npm='unalias nvm node npm && . "$NVM_BREW_DIR"/nvm.sh && npm'
 fi
 
 # Java
