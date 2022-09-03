@@ -1,13 +1,13 @@
-name: global
+name: dart
+
 version: 1.0.0+1
+
 environment:
-  sdk: ">=2.16.2 <3.0.0"
+  sdk: ">=2.18.0 <3.0.0"
+
 dependencies:
   cider: ^0.1.1
   flutter_gen: ^4.1.6
   flutterfire_cli: ^0.2.1+1
   fvm: ^2.3.1
-  yaml: ^3.1.0
-dev_dependencies:
   grinder: ^0.9.2
-  pedantic_mono: any

@@ -1,0 +1,102 @@
+ARCH=$(uname -m)
+
+# homebrew
+if [[ $ARCH == "arm64" ]]; then
+    eval $(/opt/homebrew/bin/brew shellenv)
+    export PATH="/opt/homebrew/bin:$PATH"
+else
+    eval $(/usr/local/bin/brew shellenv)
+    export PATH="/usr/local/bin:$PATH"
+fi
+
+MY_NAME=$(uname -n)
+DOTFILES_DIR=~/Develop/dotfiles
+
+if [[ $MY_NAME == "Ks-iMac.local" ]]; then
+    export HOMEBREW_BUNDLE_FILE=$DOTFILES_DIR/Brewfile_client
+elif [[ $MY_NAME == "Ks-M1-Mac-mini.local" ]]; then
+    export HOMEBREW_BUNDLE_FILE=$DOTFILES_DIR/Brewfile_server
+else
+    export HOMEBREW_BUNDLE_FILE=$DOTFILES_DIR/Brewfile_client
+fi
+
+export HOMEBREW_BUNDLE_NO_LOCK=true
+export HOMEBREW_CLEANUP_MAX_AGE_DAYS=30
+
+function brewpush() {
+    (brew bundle dump -f && cd $DOTFILES_DIR && git fetch && git add . && git commit -m "update dotfiles" && git push)
+}
+
+function brewpull() {
+    (cd $DOTFILES_DIR && git pull --rebase && brew bundle)
+}
+
+# gi
+function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$@; }
+
+# nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+if [ -e "$NVM_DIR/nvm.sh" ]; then
+    alias nvm='unalias nvm node npm && . "$NVM_DIR"/nvm.sh && nvm'
+    alias node='unalias nvm node npm && . "$NVM_DIR"/nvm.sh && node'
+    alias npm='unalias nvm node npm && . "$NVM_DIR"/nvm.sh && npm'
+fi
+
+# Java
+## システムのJava
+## JAVA_HOME=$(/usr/libexec/java_home -v "1.8")
+export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jre/Contents/Home
+export PATH=${JAVA_HOME}/bin:${PATH}
+
+# Flutter
+export PATH="$PATH:$HOME/fvm/default/bin"
+export PATH="$PATH:$HOME/fvm/default/bin/cache/dart-sdk/bin"
+export PATH="$PATH:$HOME/.pub-cache/bin"
+
+# Android
+export ANDROID_SDK_ROOT="/Users/kingu/Library/Android/sdk"
+export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
+export PATH="$PATH:$ANDROID_SDK_ROOT/cmake/3.18.1/bin"
+
+# fastlane
+export PATH="$HOME/.fastlane/bin:$PATH"
+
+# node
+export PATH=$PATH:./node_modules/.bin
+
+# alias
+alias ls='exa'
+alias cat='bat'
+alias ll='ls -lah'
+alias f='open .'
+alias x86='arch -x86_64 zsh'
+
+# [Finderで開いてるディレクトリへcdするコマンド \- Qiita](https://qiita.com/ucan-lab/items/c4b3466f53eac6f1a8b7)
+cdf() {
+    target=$(osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)')
+    if [ "$target" != "" ]; then
+        cd "$target"
+        pwd
+    else
+        echo 'No Finder window found' >&2
+    fi
+}
+
+# zsh
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_REDUCE_BLANKS
+setopt INC_APPEND_HISTORY
+
+# gcloud
+if [[ $ARCH == "arm64" ]]; then
+    source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+    source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+else
+    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+fi
+
+# Chrome
+export CHROME_EXECUTABLE=$HOME/Develop/dotfiles/google-chrome-unsafe.sh
