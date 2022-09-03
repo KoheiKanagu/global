@@ -1,8 +1,6 @@
 # global
 
-## manual install
-
-### ssh
+## ssh
 
 ```sh
 ssh-keygen
@@ -13,29 +11,29 @@ rm ~/.ssh/config && ln -s ~/Develop/global/dotfiles/config ~/.ssh/config
 
 <https://github.com/settings/ssh/new>
 
-### dotfiles
+## dotfiles
 
 ```sh
 mkdir ~/Develop && cd ~/Develop && git close git@github.com:KoheiKanagu/global.git
 ```
 
-### Homebrew
+## Homebrew
 
 <https://brew.sh/index_ja>
 
-### zsh
+## zsh
 
 ```sh
 rm ~/.zshrc && ln -s ~/Develop/global/dotfiles/zshrc ~/.zshrc
 ```
 
-### brew install
+## brew install
 
 ```sh
 brewpull
 ```
 
-### [macOS install \- Flutter](https://flutter.dev/docs/get-started/install/macos)
+## [macOS install \- Flutter](https://flutter.dev/docs/get-started/install/macos)
 
 1. Download the latest version of Flutter.
 2. Install
@@ -46,25 +44,25 @@ fvm global stable
 flutter doctor
 ```
 
-### node
+## node
 
 ```sh
 nvm install --lts && nvm alias default node
 ```
 
-### global
+## global
 
 ```sh
 ./activate.sh
 ```
 
-### Python
+## Python
 
 ```sh
 ln -s /usr/local/bin/python3 /usr/local/bin/python
 ```
 
-### Git
+## Git
 
 ```sh
 git config --global user.name "KoheiKanagu"
@@ -76,11 +74,17 @@ git config --global core.excludesfile ~/.gitignore_global
 git config --global user.signingkey D9C48560
 ```
 
-### Finder
+## Finder
 
 隠しファイルを表示
 
 ```sh
 defaults write com.apple.finder AppleShowAllFiles TRUE
 killall Finder
+```
+
+## warp
+
+```sh
+ln -s ~/Develop/global/warp/workflows ~/.warp/
 ```
