@@ -24,7 +24,7 @@ export HOMEBREW_BUNDLE_NO_LOCK=true
 export HOMEBREW_CLEANUP_MAX_AGE_DAYS=30
 
 function brewpush() {
-    (brew bundle dump -f && cd $DOTFILES_DIR && git fetch && git add . && git commit -m "update dotfiles" && git push)
+    (brew bundle dump --force --all && cd $DOTFILES_DIR && git fetch && git add . && git commit -m "update dotfiles" && git push)
 }
 
 function brewpull() {
