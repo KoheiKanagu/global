@@ -42,11 +42,3 @@ cask "slack"
 cask "the-unarchiver"
 cask "visual-studio-code"
 cask "warp"
-mas "Apple Configurator", id: 1037126344
-mas "DevCleaner", id: 1388020431
-mas "Gifski", id: 1351639930
-mas "Monosnap", id: 540348655
-mas "RunCat", id: 1429033973
-mas "Spark", id: 1176895641
-mas "Transporter", id: 1450874784
-mas "Xcode", id: 497799835
