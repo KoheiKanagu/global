@@ -1,0 +1,11 @@
+name: global push
+
+command: |
+  brew bundle dump --force --all
+  cd $DOTFILES_DIR
+  git fetch
+  git add .
+  git commit -m "update"
+  git push
+
+description: "globalをpushする"

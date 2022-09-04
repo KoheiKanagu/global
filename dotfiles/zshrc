@@ -23,14 +23,6 @@ fi
 export HOMEBREW_BUNDLE_NO_LOCK=true
 export HOMEBREW_CLEANUP_MAX_AGE_DAYS=30
 
-function brewpush() {
-    (brew bundle dump --force --all && cd $DOTFILES_DIR && git fetch && git add . && git commit -m "update dotfiles" && git push)
-}
-
-function brewpull() {
-    (cd $DOTFILES_DIR && git pull --rebase && brew bundle install && brew bundle cleanup --force && ./activate.sh)
-}
-
 # gi
 function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$@; }
 

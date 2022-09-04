@@ -1,0 +1,10 @@
+name: global push
+
+command: |
+  cd $DOTFILES_DIR
+  git pull --rebase
+  brew bundle install
+  brew bundle cleanup --force
+  ./activate.sh
+
+description: "globalをpullする"
