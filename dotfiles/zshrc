@@ -62,11 +62,15 @@ export PATH="$HOME/.fastlane/bin:$PATH"
 export PATH=$PATH:./node_modules/.bin
 
 # alias
-alias ls='exa'
 alias cat='bat'
-alias ll='ls -lah'
 alias f='open .'
 alias x86='arch -x86_64 zsh'
+
+## lsd https://github.com/Peltoche/lsd
+alias ls='lsd -A --group-dirs=last'
+alias ll='lsd -Ahl --total-size --group-dirs=last'
+alias tree='lsd -A --tree --group-dirs=last'
+alias lr='lsd -Ahl --total-size --tree --group-dirs=last'
 
 # [Finderで開いてるディレクトリへcdするコマンド \- Qiita](https://qiita.com/ucan-lab/items/c4b3466f53eac6f1a8b7)
 cdf() {
@@ -97,3 +101,6 @@ fi
 
 # Chrome
 export CHROME_EXECUTABLE=$HOME/Develop/global/dotfiles/google-chrome-unsafe.sh
+
+# zoxide https://github.com/ajeetdsouza/zoxide
+eval "$(zoxide init --cmd cd zsh)"
