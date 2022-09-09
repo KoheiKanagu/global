@@ -5,6 +5,7 @@ command: |
   git pull --rebase
   brew bundle install
   brew bundle cleanup --force
+  npm --version
   ./activate.sh
   popd
 
