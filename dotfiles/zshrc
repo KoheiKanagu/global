@@ -37,6 +37,8 @@ if [ -e "$NVM_BREW_DIR/nvm.sh" ]; then
     alias nvm='unalias nvm node npm && . "$NVM_BREW_DIR"/nvm.sh && nvm'
     alias node='unalias nvm node npm && . "$NVM_BREW_DIR"/nvm.sh && node'
     alias npm='unalias nvm node npm && . "$NVM_BREW_DIR"/nvm.sh && npm'
+    alias firebase='unalias nvm node npm firebase && . "$NVM_BREW_DIR"/nvm.sh && firebase'
+    alias gts='unalias nvm node npm gts && . "$NVM_BREW_DIR"/nvm.sh && gts'
 fi
 
 # Java
@@ -65,6 +67,7 @@ export PATH=$PATH:./node_modules/.bin
 alias cat='bat'
 alias f='open .'
 alias x86='arch -x86_64 zsh'
+alias ps='procs'
 
 ## lsd https://github.com/Peltoche/lsd
 alias ls='lsd -A --group-dirs=last'
