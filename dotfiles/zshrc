@@ -22,6 +22,7 @@ fi
 
 export HOMEBREW_BUNDLE_NO_LOCK=true
 export HOMEBREW_CLEANUP_MAX_AGE_DAYS=30
+export HOMEBREW_BUNDLE_MAS_SKIP="Xcode"
 
 # gi
 function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$@; }
