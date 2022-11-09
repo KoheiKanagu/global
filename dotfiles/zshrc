@@ -38,6 +38,7 @@ if [ -e "$NVM_BREW_DIR/nvm.sh" ]; then
     alias nvm='unalias nvm node npm && . "$NVM_BREW_DIR"/nvm.sh && nvm'
     alias node='unalias nvm node npm && . "$NVM_BREW_DIR"/nvm.sh && node'
     alias npm='unalias nvm node npm && . "$NVM_BREW_DIR"/nvm.sh && npm'
+    alias npx='unalias nvm node npm npx && . "$NVM_BREW_DIR"/nvm.sh && npx'
     alias firebase='unalias nvm node npm firebase && . "$NVM_BREW_DIR"/nvm.sh && firebase'
     alias gts='unalias nvm node npm gts && . "$NVM_BREW_DIR"/nvm.sh && gts'
 fi
