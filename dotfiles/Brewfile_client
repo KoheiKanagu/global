@@ -11,6 +11,7 @@ brew "cocoapods"
 brew "fastlane"
 brew "unbound"
 brew "gnutls"
+brew "ffmpeg", link: false
 brew "fzf"
 brew "gh"
 brew "gradle"
