@@ -1,0 +1,11 @@
+[core]
+	excludesfile = /Users/kingu/.gitignore_global
+[user]
+	name = KoheiKanagu
+	email = kanagu@kingu.dev
+	signingkey = D9C48560
+[commit]
+	gpgsign = true
+[fetch]
+	prune = true
+	pruneTags = true

@@ -65,13 +65,9 @@ ln -s /usr/local/bin/python3 /usr/local/bin/python
 ## Git
 
 ```sh
-git config --global user.name "KoheiKanagu"
-git config --global user.email "kanagu@kingu.dev"
-
 gi macos > ~/.gitignore_global
-git config --global core.excludesfile ~/.gitignore_global
 
-git config --global user.signingkey D9C48560
+rm ~/.gitconfig && ln -s ~/Develop/global/dotfiles/gitconfig ~/.gitconfig
 ```
 
 ## Finder
