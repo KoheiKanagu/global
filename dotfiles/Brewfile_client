@@ -7,7 +7,7 @@ tap "homebrew/services"
 tap "zkokaja/brewlet"
 brew "bat"
 brew "glib"
-brew "cocoapods"
+brew "cocoapods", link: false
 brew "fastlane"
 brew "unbound"
 brew "gnutls"

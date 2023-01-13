@@ -30,18 +30,11 @@ function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$
 # nvm
 export NVM_DIR="$HOME/.nvm"
 if [[ $ARCH == "arm64" ]]; then
-    NVM_BREW_DIR="/opt/homebrew/opt/nvm"
+    export NVM_BREW_DIR="/opt/homebrew/opt/nvm"
 else
-    NVM_BREW_DIR="/usr/local/opt/nvm"
+    export NVM_BREW_DIR="/usr/local/opt/nvm"
 fi
-if [ -e "$NVM_BREW_DIR/nvm.sh" ]; then
-    alias nvm='unalias nvm node npm && . "$NVM_BREW_DIR"/nvm.sh && nvm'
-    alias node='unalias nvm node npm && . "$NVM_BREW_DIR"/nvm.sh && node'
-    alias npm='unalias nvm node npm && . "$NVM_BREW_DIR"/nvm.sh && npm'
-    alias npx='unalias nvm node npm npx && . "$NVM_BREW_DIR"/nvm.sh && npx'
-    alias firebase='unalias nvm node npm firebase && . "$NVM_BREW_DIR"/nvm.sh && firebase'
-    alias gts='unalias nvm node npm gts && . "$NVM_BREW_DIR"/nvm.sh && gts'
-fi
+[ -s "$NVM_BREW_DIR/nvm.sh" ] && \. "$NVM_BREW_DIR/nvm.sh" # This loads nvm
 
 # Java
 ## システムのJava
