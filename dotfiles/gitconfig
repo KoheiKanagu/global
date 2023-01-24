@@ -1,5 +1,6 @@
 [core]
 	excludesfile = /Users/kingu/.gitignore_global
+	hooksPath = .githooks
 [user]
 	name = KoheiKanagu
 	email = kanagu@kingu.dev
