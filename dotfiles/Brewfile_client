@@ -25,6 +25,7 @@ brew "lima"
 brew "lsd"
 brew "mas"
 brew "nvm"
+brew "python@3.11"
 brew "pipenv"
 brew "procs"
 brew "python@3.10"
@@ -50,6 +51,7 @@ cask "warp"
 mas "Apple Configurator", id: 1037126344
 mas "DevCleaner", id: 1388020431
 mas "Gifski", id: 1351639930
+mas "Keynote", id: 409183694
 mas "Monosnap", id: 540348655
 mas "RunCat", id: 1429033973
 mas "Transporter", id: 1450874784
