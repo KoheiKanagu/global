@@ -30,7 +30,7 @@ rm ~/.zshrc && ln -s ~/Develop/global/dotfiles/zshrc ~/.zshrc
 ## brew install
 
 ```sh
-brewpull
+brew bundle install
 ```
 
 ## node
