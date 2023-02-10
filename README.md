@@ -1,5 +1,15 @@
 # global
 
+## Homebrew
+
+<https://brew.sh/index_ja>
+
+## dotfiles
+
+```sh
+mkdir ~/Develop && cd ~/Develop && git clone git@github.com:KoheiKanagu/global.git
+```
+
 ## ssh
 
 ```sh
@@ -11,16 +21,6 @@ rm ~/.ssh/config && ln -s ~/Develop/global/dotfiles/config ~/.ssh/config
 
 <https://github.com/settings/ssh/new>
 
-## dotfiles
-
-```sh
-mkdir ~/Develop && cd ~/Develop && git clone git@github.com:KoheiKanagu/global.git
-```
-
-## Homebrew
-
-<https://brew.sh/index_ja>
-
 ## zsh
 
 ```sh
@@ -31,17 +31,6 @@ rm ~/.zshrc && ln -s ~/Develop/global/dotfiles/zshrc ~/.zshrc
 
 ```sh
 brewpull
-```
-
-## [macOS install \- Flutter](https://flutter.dev/docs/get-started/install/macos)
-
-1. Download the latest version of Flutter.
-2. Install
-
-```sh
-flutter/bin/flutter pub global activate fvm
-fvm global stable
-flutter doctor
 ```
 
 ## node
