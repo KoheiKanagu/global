@@ -15,6 +15,7 @@ brew "unbound"
 brew "gnutls"
 brew "harfbuzz"
 brew "libass"
+brew "ffmpeg", link: false
 brew "fzf"
 brew "gh"
 brew "gradle"
@@ -57,3 +58,4 @@ mas "Keynote", id: 409183694
 mas "Monosnap", id: 540348655
 mas "RunCat", id: 1429033973
 mas "Transporter", id: 1450874784
+mas "Xcode", id: 497799835

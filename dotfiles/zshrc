@@ -12,14 +12,7 @@ fi
 MY_NAME=$(uname -n)
 DOTFILES_DIR=~/Develop/global
 
-if [[ $MY_NAME == "Ks-iMac.local" ]]; then
-    export HOMEBREW_BUNDLE_FILE=$DOTFILES_DIR/dotfiles/Brewfile_client
-elif [[ $MY_NAME == "Ks-M1-Mac-mini.local" ]]; then
-    export HOMEBREW_BUNDLE_FILE=$DOTFILES_DIR/dotfiles/Brewfile_server
-else
-    export HOMEBREW_BUNDLE_FILE=$DOTFILES_DIR/dotfiles/Brewfile_client
-fi
-
+export HOMEBREW_BUNDLE_FILE=$DOTFILES_DIR/dotfiles/Brewfile
 export HOMEBREW_BUNDLE_NO_LOCK=true
 export HOMEBREW_CLEANUP_MAX_AGE_DAYS=30
 export HOMEBREW_BUNDLE_MAS_SKIP="Xcode"
