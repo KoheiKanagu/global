@@ -14,6 +14,13 @@ DOTFILES_DIR=~/Develop/global
 
 function brewpush {
     pushd $DOTFILES_DIR
+    cd global-private
+    git fetch
+    git add .
+    git commit -m "update"
+    git push
+    cd ../
+
     brew bundle dump --force --all
     git fetch
     git add .
