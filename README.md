@@ -80,3 +80,10 @@ ln -s ~/Develop/global/warp/workflows ~/.warp/
 # https://github.com/seachicken/gh-poi
 gh extension install seachicken/gh-poi
 ```
+
+## fvm
+
+```sh
+fvm install stable
+brew unlink dart
+```
