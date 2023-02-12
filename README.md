@@ -42,7 +42,7 @@ nvm install --lts && nvm alias default node
 ## global
 
 ```sh
-./activate.sh
+brewpull
 ```
 
 ## Python
@@ -72,4 +72,11 @@ killall Finder
 
 ```sh
 ln -s ~/Develop/global/warp/workflows ~/.warp/
+```
+
+## gh
+
+```sh
+# https://github.com/seachicken/gh-poi
+gh extension install seachicken/gh-poi
 ```

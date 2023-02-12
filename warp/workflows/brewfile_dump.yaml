@@ -1,6 +1,0 @@
-name: brewfile dump
-
-command: |
-  brew bundle dump --force --all
-
-description: "Brewfileを書き出す"

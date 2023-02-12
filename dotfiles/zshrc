@@ -12,6 +12,28 @@ fi
 MY_NAME=$(uname -n)
 DOTFILES_DIR=~/Develop/global
 
+function brewpush {
+    pushd $DOTFILES_DIR
+    brew bundle dump --force --all
+    git fetch
+    git add .
+    git commit -m "update"
+    git push
+    popd
+}
+
+function brewpull {
+    pushd $DOTFILES_DIR
+    git pull --rebase
+    brew bundle install
+    brew bundle cleanup --force
+    npm --version
+    dart pub get
+    dart main.dart
+    jq ".dependencies | keys | .[]" <npm/package.json | xargs -I DEPS npm install --global DEPS
+    popd
+}
+
 export HOMEBREW_BUNDLE_FILE=$DOTFILES_DIR/dotfiles/Brewfile
 export HOMEBREW_BUNDLE_NO_LOCK=true
 export HOMEBREW_CLEANUP_MAX_AGE_DAYS=30

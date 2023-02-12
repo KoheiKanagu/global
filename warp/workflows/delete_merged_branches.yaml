@@ -1,4 +1,0 @@
-name: Delete merged branches
-command: |
-  git branch --merged | egrep -v '\*|main' | xargs git branch -d
-description: "マージ済みのブランチを削除する"
