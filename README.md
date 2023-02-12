@@ -16,7 +16,7 @@ mkdir ~/Develop && cd ~/Develop && git clone git@github.com:KoheiKanagu/global.g
 ssh-keygen
 cat ~/.ssh/id_rsa.pub | pbcopy
 
-rm ~/.ssh/config && ln -s ~/Develop/global/dotfiles/config ~/.ssh/config
+rm ~/.ssh/config && ln -s ~/Develop/global/global-private/dotfiles/config ~/.ssh/config
 ```
 
 <https://github.com/settings/ssh/new>
