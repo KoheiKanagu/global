@@ -31,7 +31,7 @@ function brewpush {
 
 function brewpull {
     pushd $DOTFILES_DIR
-    git pull --rebase
+    git pull --rebase --recurse-submodules
     brew bundle install
     brew bundle cleanup --force
     npm --version
