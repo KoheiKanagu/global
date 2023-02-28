@@ -15,6 +15,7 @@ brew "unbound"
 brew "gnutls"
 brew "harfbuzz"
 brew "libass"
+brew "pango"
 brew "ffmpeg", link: false
 brew "fzf"
 brew "gh"
