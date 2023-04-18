@@ -6,7 +6,6 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "leoafarias/fvm"
-tap "robotsandpencils/made"
 tap "zkokaja/brewlet"
 brew "jpeg-xl"
 brew "bat"
@@ -66,6 +65,5 @@ mas "Developer", id: 640199958
 mas "Gifski", id: 1351639930
 mas "Keynote", id: 409183694
 mas "Monosnap", id: 540348655
-mas "Refined GitHub", id: 1519867270
 mas "RunCat", id: 1429033973
 mas "Transporter", id: 1450874784
