@@ -58,6 +58,9 @@ else
 fi
 [ -s "$NVM_BREW_DIR/nvm.sh" ] && \. "$NVM_BREW_DIR/nvm.sh" # This loads nvm
 
+# rbenv
+eval "$(rbenv init - zsh)"
+
 # Java
 ## システムのJava
 ## JAVA_HOME=$(/usr/libexec/java_home -v "1.8")

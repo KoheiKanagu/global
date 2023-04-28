@@ -27,28 +27,22 @@ rm ~/.ssh/config && ln -s ~/Develop/global/global-private/dotfiles/config ~/.ssh
 rm ~/.zshrc && ln -s ~/Develop/global/dotfiles/zshrc ~/.zshrc
 ```
 
-## brew install
-
-```sh
-brew bundle install
-```
-
-## node
-
-```sh
-nvm install --lts && nvm alias default node
-```
-
-## global
+## initialize
 
 ```sh
 brewpull
 ```
 
-## Python
+## Node
 
 ```sh
-ln -s /usr/local/bin/python3 /usr/local/bin/python
+nvm install --lts && nvm alias default node
+```
+
+## Ruby
+
+```sh
+rbenv install 3.2.2 && rbenv global 3.2.2
 ```
 
 ## Git
