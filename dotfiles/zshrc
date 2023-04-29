@@ -38,6 +38,7 @@ function brewpull {
     dart pub get
     dart main.dart
     jq ".dependencies | keys | .[]" <npm/package.json | xargs -I DEPS npm install --global DEPS
+    (cd gh && ./install.sh)
     popd
 }
 
@@ -45,9 +46,6 @@ export HOMEBREW_BUNDLE_FILE=$DOTFILES_DIR/dotfiles/Brewfile
 export HOMEBREW_BUNDLE_NO_LOCK=true
 export HOMEBREW_CLEANUP_MAX_AGE_DAYS=30
 export HOMEBREW_BUNDLE_MAS_SKIP="Xcode"
-
-# gi
-function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$@; }
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
