@@ -1,0 +1,4 @@
+name: "Remove provisioning files"
+command: |
+  rm -rf ~/Library/MobileDevice/Provisioning\ Profiles/*
+description: "Remove provisioning files"
