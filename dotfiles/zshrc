@@ -39,6 +39,7 @@ function brewpull {
     dart main.dart
     jq ".dependencies | keys | .[]" <npm/package.json | xargs -I DEPS npm install --global DEPS
     ./gh/bootstrap.sh
+    ./gem/bootstrap.sh
     popd
 }
 
