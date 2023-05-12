@@ -79,5 +79,5 @@ gh extension install seachicken/gh-poi
 
 ```sh
 fvm install stable
-brew unlink dart
+brew uninstall dart
 ```
