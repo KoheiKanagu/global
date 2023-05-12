@@ -29,10 +29,10 @@ packages:
     dependency: "direct main"
     description:
       name: dart_console
-      sha256: cfbaeb901f23f3c838a6e70bf15c747b83bf53884bb850d1536c8512dc5005b3
+      sha256: dfa4b63eb4382325ff975fdb6b7a0db8303bb5809ee5cb4516b44153844742ed
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.2"
+    version: "1.2.0"
   ffi:
     dependency: transitive
     description:
@@ -53,10 +53,10 @@ packages:
     dependency: transitive
     description:
       name: intl
-      sha256: "910f85bce16fb5c6f614e117efa303e85a1731bb0081edf3604a2ae6e9a3cc91"
+      sha256: "3bc132a9dbce73a7e4a21a17d06e1878839ffbf975568bc875c60537824b0c4d"
       url: "https://pub.dev"
     source: hosted
-    version: "0.17.0"
+    version: "0.18.1"
   lints:
     dependency: transitive
     description:
@@ -65,6 +65,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.1"
+  meta:
+    dependency: transitive
+    description:
+      name: meta
+      sha256: "3c74dbf8763d36539f114c799d8a2d87343b5067e9d796ca22b5eb8437090ee3"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.9.1"
   path:
     dependency: transitive
     description:
@@ -77,10 +85,10 @@ packages:
     dependency: "direct dev"
     description:
       name: pedantic_mono
-      sha256: a852298d064d51a31d24863fd464c4bbd58aba6dfc8affbbf8a651fd803ae1b4
+      sha256: f06b0d77589c9af90a54867a39761ebad9f867a746a270982cdd6ee370b2ea27
       url: "https://pub.dev"
     source: hosted
-    version: "1.21.1"
+    version: "1.22.0"
   source_span:
     dependency: transitive
     description:
@@ -109,10 +117,10 @@ packages:
     dependency: transitive
     description:
       name: win32
-      sha256: "6b75ac2ddd42f5c226fdaf4498a2b04071c06f1f2b8f7ab1c3f77cc7f2285ff1"
+      sha256: "1a2b223d727763433987bfb61916404272342812cc7b88c3b77b2ba25010e90a"
       url: "https://pub.dev"
     source: hosted
-    version: "2.7.0"
+    version: "5.0.0"
   yaml:
     dependency: "direct main"
     description:
@@ -122,4 +130,4 @@ packages:
     source: hosted
     version: "3.1.2"
 sdks:
-  dart: ">=2.19.0 <4.0.0"
+  dart: ">=3.0.0 <4.0.0"
