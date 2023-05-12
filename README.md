@@ -68,13 +68,6 @@ killall Finder
 ln -s ~/Develop/global/warp/workflows ~/.warp/
 ```
 
-## gh
-
-```sh
-# https://github.com/seachicken/gh-poi
-gh extension install seachicken/gh-poi
-```
-
 ## fvm
 
 ```sh
