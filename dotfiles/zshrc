@@ -50,11 +50,7 @@ export HOMEBREW_BUNDLE_MAS_SKIP="Xcode"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-if [[ $ARCH == "arm64" ]]; then
-    export NVM_BREW_DIR="/opt/homebrew/opt/nvm"
-else
-    export NVM_BREW_DIR="/usr/local/opt/nvm"
-fi
+export NVM_BREW_DIR="$(brew --prefix)/opt/nvm"
 [ -s "$NVM_BREW_DIR/nvm.sh" ] && \. "$NVM_BREW_DIR/nvm.sh" # This loads nvm
 
 # rbenv
@@ -113,13 +109,8 @@ setopt HIST_REDUCE_BLANKS
 setopt INC_APPEND_HISTORY
 
 # gcloud
-if [[ $ARCH == "arm64" ]]; then
-    source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-    source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-else
-    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-fi
+source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
 
 # Chrome
 export CHROME_EXECUTABLE=$HOME/Develop/global/dotfiles/google-chrome-unsafe.sh
