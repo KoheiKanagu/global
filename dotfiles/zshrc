@@ -116,4 +116,4 @@ source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
 export CHROME_EXECUTABLE=$HOME/Develop/global/dotfiles/google-chrome-unsafe.sh
 
 # zoxide https://github.com/ajeetdsouza/zoxide
-eval "$(zoxide init --cmd cd zsh)"
+eval "$(zoxide init zsh)"
