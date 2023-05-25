@@ -2,7 +2,7 @@
   "name": "npm",
   "version": "1.0.0",
   "dependencies": {
-    "firebase-tools": "^12.1.0",
+    "firebase-tools": "^12.2.1",
     "gts": "^3.1.1",
     "npm": "^9.6.6",
     "npm-check-updates": "^16.10.12"
