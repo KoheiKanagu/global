@@ -21,7 +21,7 @@ function brewpush {
     git push
     cd ../
 
-    brew bundle dump --force --all
+    brew bundle dump --force --brews --cask --tap
     git fetch
     git add .
     git commit -m "update"
@@ -46,7 +46,6 @@ function brewpull {
 export HOMEBREW_BUNDLE_FILE=$DOTFILES_DIR/dotfiles/Brewfile
 export HOMEBREW_BUNDLE_NO_LOCK=true
 export HOMEBREW_CLEANUP_MAX_AGE_DAYS=30
-export HOMEBREW_BUNDLE_MAS_SKIP="Xcode"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
