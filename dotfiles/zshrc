@@ -61,8 +61,6 @@ export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jbr/Contents/Home
 export PATH=${JAVA_HOME}/bin:${PATH}
 
 # Flutter
-export PATH="$PATH:$HOME/fvm/default/bin"
-export PATH="$PATH:$HOME/fvm/default/bin/cache/dart-sdk/bin"
 export PATH="$PATH:$HOME/.pub-cache/bin"
 
 # Android
