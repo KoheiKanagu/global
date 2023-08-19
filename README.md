@@ -67,10 +67,3 @@ killall Finder
 ```sh
 ln -s ~/Develop/global/warp/workflows ~/.warp/
 ```
-
-## fvm
-
-```sh
-fvm install stable
-brew uninstall dart
-```
