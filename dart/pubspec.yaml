@@ -6,11 +6,11 @@ environment:
   sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
-  cider: ^0.1.5
+  cider: ^0.2.3
   flutter_gen: ^5.3.1
-  flutterfire_cli: ^0.2.7
+  flutterfire_cli: ^0.3.0-dev.17
   grinder: ^0.9.4
-  melos: ^3.0.1
+  melos: ^3.1.0
 
 dependency_overrides:
   cli_util: ^0.4.0
