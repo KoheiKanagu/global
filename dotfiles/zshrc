@@ -114,3 +114,9 @@ export CHROME_EXECUTABLE=$HOME/Develop/global/dotfiles/google-chrome-unsafe.sh
 
 # zoxide https://github.com/ajeetdsouza/zoxide
 eval "$(zoxide init zsh)"
+
+## [Completion] 
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/kingu/.dart-cli-completion/zsh-config.zsh ]] && . /Users/kingu/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
