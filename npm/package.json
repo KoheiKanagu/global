@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "firebase-tools": "^12.6.2",
-    "gts": "^5.1.1",
+    "gts": "^5.2.0",
     "npm": "^9.6.6",
     "npm-check-updates": "^16.14.5"
   }
