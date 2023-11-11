@@ -67,3 +67,7 @@ killall Finder
 ```sh
 ln -s ~/Develop/global/warp/workflows ~/.warp/
 ```
+
+## Font
+
+https://github.com/githubnext/monaspace
