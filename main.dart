@@ -12,14 +12,16 @@ Future<void> main(List<String> args) async {
 
   final dependencies = pubspec['dependencies'] as YamlMap;
 
-  for (final e in dependencies.keys) {
+  for (final e in dependencies.entries) {
     await _run(
       'dart',
       arguments: [
         'pub',
         'global',
         'activate',
-        '$e',
+        '${e.key}',
+        '${e.value}',
+        '--overwrite',
       ],
     );
   }
