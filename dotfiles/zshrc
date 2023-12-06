@@ -3,10 +3,10 @@ ARCH=$(uname -m)
 # homebrew
 if [[ $ARCH == "arm64" ]]; then
     eval $(/opt/homebrew/bin/brew shellenv)
-    export PATH="/opt/homebrew/bin:$PATH"
+    export PATH="$PATH:/opt/homebrew/bin"
 else
     eval $(/usr/local/bin/brew shellenv)
-    export PATH="/usr/local/bin:$PATH"
+    export PATH=":$PATH:/usr/local/bin"
 fi
 
 MY_NAME=$(uname -n)
@@ -61,7 +61,8 @@ export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jbr/Contents/Home
 export PATH=${JAVA_HOME}/bin:${PATH}
 
 # Flutter
-export PATH="$PATH:$HOME/.pub-cache/bin"
+export PATH="$HOME/.pub-cache/bin:$PATH"
+export PATH="$HOME/fvm/default/bin:$PATH"
 
 # Android
 export ANDROID_SDK_ROOT="/Users/kingu/Library/Android/sdk"
