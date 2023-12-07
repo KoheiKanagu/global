@@ -58,11 +58,12 @@ eval "$(rbenv init - zsh)"
 # Java
 export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jbr/Contents/Home
 # export JAVA_HOME=/opt/homebrew/opt/openjdk@11
-export PATH=${JAVA_HOME}/bin:${PATH}
+export PATH="$PATH:$JAVA_HOME/bin"
 
 # Flutter
+export PATH="$PATH:$HOME/fvm/default/bin"
+## brewでfvmをインストールしているが、依存しているdartではなくfvmのdartを使いたいので優先する
 export PATH="$HOME/.pub-cache/bin:$PATH"
-export PATH="$HOME/fvm/default/bin:$PATH"
 
 # Android
 export ANDROID_SDK_ROOT="/Users/kingu/Library/Android/sdk"
@@ -71,7 +72,7 @@ export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
 export PATH="$PATH:$ANDROID_SDK_ROOT/cmake/3.18.1/bin"
 
 # fastlane
-export PATH="$HOME/.fastlane/bin:$PATH"
+export PATH="$PATH:$HOME/.fastlane/bin"
 
 # node
 export PATH=$PATH:./node_modules/.bin
@@ -133,4 +134,4 @@ export CCACHE_FILECLONE=true
 export CCACHE_DEPEND=true
 export CCACHE_INODECACHE=true
 
-export PATH="/opt/homebrew/opt/ccache/libexec:$PATH"
+export PATH="$PATH:/opt/homebrew/opt/ccache/libexec"
