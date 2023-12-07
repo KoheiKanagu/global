@@ -1,4 +1,0 @@
-name: Mirroring Android device
-command: |
-  scrcpy --turn-screen-off --show-touches --power-off-on-close
-description: "Androidデバイスをミラーリングする"

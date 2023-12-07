@@ -62,12 +62,6 @@ defaults write com.apple.finder AppleShowAllFiles TRUE
 killall Finder
 ```
 
-## warp
-
-```sh
-ln -s ~/Develop/global/warp/workflows ~/.warp/
-```
-
 ## Font
 
 https://github.com/githubnext/monaspace
