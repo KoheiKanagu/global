@@ -64,4 +64,4 @@ killall Finder
 
 ## Font
 
-https://github.com/githubnext/monaspace
+<https://github.com/githubnext/monaspace>
