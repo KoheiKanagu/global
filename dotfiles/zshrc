@@ -58,7 +58,7 @@ eval "$(rbenv init - zsh)"
 # Java
 export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jbr/Contents/Home
 # export JAVA_HOME=/opt/homebrew/opt/openjdk@11
-export PATH="$PATH:$JAVA_HOME/bin"
+export PATH="$JAVA_HOME/bin:$PATH"
 
 # Flutter
 export PATH="$PATH:$HOME/fvm/default/bin"
@@ -66,7 +66,7 @@ export PATH="$PATH:$HOME/fvm/default/bin"
 export PATH="$HOME/.pub-cache/bin:$PATH"
 
 # Android
-export ANDROID_SDK_ROOT="/Users/kingu/Library/Android/sdk"
+export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 export ANDROID_HOME="$ANDROID_SDK_ROOT"
 export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
 export PATH="$PATH:$ANDROID_SDK_ROOT/cmake/3.18.1/bin"
@@ -119,7 +119,7 @@ eval "$(zoxide init zsh)"
 
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
-[[ -f /Users/kingu/.dart-cli-completion/zsh-config.zsh ]] && . /Users/kingu/.dart-cli-completion/zsh-config.zsh || true
+[[ -f $HOME/.dart-cli-completion/zsh-config.zsh ]] && . $HOME/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
 # GitHub Copilot
