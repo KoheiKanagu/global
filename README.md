@@ -65,3 +65,14 @@ killall Finder
 ## Font
 
 <https://github.com/githubnext/monaspace>
+
+## ccache
+
+```sh
+sudo ln -s $(which ccache) /usr/local/bin/gcc
+sudo ln -s $(which ccache) /usr/local/bin/g++
+sudo ln -s $(which ccache) /usr/local/bin/cc
+sudo ln -s $(which ccache) /usr/local/bin/c++
+sudo ln -s $(which ccache) /usr/local/bin/clang
+sudo ln -s $(which ccache) /usr/local/bin/clang++
+```
