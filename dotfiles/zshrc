@@ -137,3 +137,6 @@ export CCACHE_DEPEND=true
 export CCACHE_INODECACHE=true
 
 export PATH="$PATH:/opt/homebrew/opt/ccache/libexec"
+
+# go lang
+export PATH="$PATH:$HOME/go/bin"
