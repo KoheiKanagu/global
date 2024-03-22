@@ -1,8 +1,0 @@
-{
-  "name": "npm",
-  "version": "1.0.0",
-  "dependencies": {
-    "firebase-tools": "^13.5.2",
-    "gts": "^5.2.0"
-  }
-}

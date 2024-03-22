@@ -17,14 +17,14 @@ function brewpush {
     cd global-private
     git fetch
     git add .
-    git commit -m "update"
+    git commit -m "build: update"
     git push
     cd ../
 
     brew bundle dump --force --brews --cask --tap
     git fetch
     git add .
-    git commit -m "update"
+    git commit -m "build: update"
     git push
     popd
 }
@@ -34,10 +34,8 @@ function brewpull {
     git pull --rebase --recurse-submodules
     brew bundle install
     brew bundle cleanup --force
-    npm --version
-    dart pub get
-    dart main.dart
-    jq ".dependencies | keys | .[]" <npm/package.json | xargs -I DEPS npm install --global DEPS
+    ./dart/bootstrap.sh
+    ./npm/bootstrap.sh
     ./gh/bootstrap.sh
     ./gem/bootstrap.sh
     popd
