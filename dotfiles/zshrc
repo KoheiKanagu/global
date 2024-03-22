@@ -125,10 +125,7 @@ eval "$(zoxide init zsh)"
 ## [/Completion]
 
 # GitHub Copilot
-copilot_shell_suggest() {
-    gh copilot suggest -t shell "$@"
-}
-alias '??'='copilot_shell_suggest'
+eval "$(gh copilot alias -- zsh)"
 
 # ccache
 export CCACHE_SLOPPINESS=clang_index_store,file_stat_matches,include_file_ctime,include_file_mtime,ivfsoverlay,pch_defines,modules,system_headers,time_macros
