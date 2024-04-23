@@ -72,7 +72,7 @@ export PATH="$PATH:$ANDROID_SDK_ROOT/cmake/3.18.1/bin"
 # fastlane
 export PATH="$PATH:$HOME/.fastlane/bin"
 export APP_STORE_CONNECT_API_KEY_PATH="$HOME/.private_keys/for_fastlane_api_key.json"
-export SUPPLY_JSON_KEY="$HOME/.private_keys/pc-api-6211358219789163003-906-a111257e48d5.json"
+export SUPPLY_JSON_KEY="$HOME/.private_keys/kingu-garage-prod-ef004f8bf995.json"
 
 # node
 export PATH=$PATH:./node_modules/.bin
