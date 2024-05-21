@@ -82,6 +82,7 @@ alias cat='bat'
 alias f='open .'
 alias x86='arch -x86_64 zsh'
 alias ps='procs'
+alias code='code-insiders'
 
 ## lsd https://github.com/Peltoche/lsd
 alias ls='lsd -A --group-dirs=last'
@@ -135,3 +136,6 @@ export PATH="$PATH:/opt/homebrew/opt/ccache/libexec"
 
 # go lang
 export PATH="$PATH:$HOME/go/bin"
+
+# GPG
+export GPG_TTY=$(tty)
