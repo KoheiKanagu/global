@@ -33,12 +33,6 @@ rm ~/.zshrc && ln -s ~/Develop/global/dotfiles/zshrc ~/.zshrc
 brewpull
 ```
 
-## Node
-
-```sh
-nvm install --lts && nvm alias default node
-```
-
 ## Ruby
 
 ```sh

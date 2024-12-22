@@ -35,7 +35,7 @@ function brewpull {
     brew bundle install
     brew bundle cleanup --force
     ./dart/bootstrap.sh
-    ./npm/bootstrap.sh
+    ./node/bootstrap.sh
     ./gh/bootstrap.sh
     ./gem/bootstrap.sh
     popd
