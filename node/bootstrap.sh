@@ -1,5 +1,7 @@
 #!/bin/bash
-set -euxo pipefail
+set -euo pipefail
+
+\. "$NVM_BREW_DIR/nvm.sh" # This loads nvm
 
 nvm install --latest-npm v20
 nvm alias default node
