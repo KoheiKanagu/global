@@ -139,3 +139,5 @@ export PATH="$PATH:$HOME/go/bin"
 
 # GPG
 export GPG_TTY=$(tty)
+
+alias beep='afplay /System/Library/Sounds/Ping.aiff'
