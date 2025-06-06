@@ -83,6 +83,7 @@ alias f='open .'
 alias x86='arch -x86_64 zsh'
 alias ps='procs'
 alias code='code-insiders'
+alias beep='afplay /System/Library/Sounds/Ping.aiff'
 
 ## lsd https://github.com/Peltoche/lsd
 alias ls='lsd -A --group-dirs=last'
@@ -140,4 +141,3 @@ export PATH="$PATH:$HOME/go/bin"
 # GPG
 export GPG_TTY=$(tty)
 
-alias beep='afplay /System/Library/Sounds/Ping.aiff'
