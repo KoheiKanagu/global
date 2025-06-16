@@ -141,3 +141,8 @@ export PATH="$PATH:$HOME/go/bin"
 # GPG
 export GPG_TTY=$(tty)
 
+# direnv
+eval "$(direnv hook zsh)"
+
+# Rust
+export PATH="$PATH:$HOME/.cargo/bin"
