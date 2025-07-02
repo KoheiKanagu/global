@@ -146,3 +146,8 @@ eval "$(direnv hook zsh)"
 
 # Rust
 export PATH="$PATH:$HOME/.cargo/bin"
+
+# Load private settings
+if [ -f "$DOTFILES_DIR/global-private/dotfiles/private.sh" ]; then
+    . "$DOTFILES_DIR/global-private/dotfiles/private.sh"
+fi
