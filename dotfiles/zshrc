@@ -151,3 +151,6 @@ export PATH="$PATH:$HOME/.cargo/bin"
 if [ -f "$DOTFILES_DIR/global-private/dotfiles/private.sh" ]; then
     . "$DOTFILES_DIR/global-private/dotfiles/private.sh"
 fi
+
+# Gemini
+export GEMINI_MODEL="gemini-2.5-flash"
