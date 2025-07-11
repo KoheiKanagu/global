@@ -1,13 +1,5 @@
-ARCH=$(uname -m)
-
 # homebrew
-if [[ $ARCH == "arm64" ]]; then
-    eval $(/opt/homebrew/bin/brew shellenv)
-    export PATH="$PATH:/opt/homebrew/bin"
-else
-    eval $(/usr/local/bin/brew shellenv)
-    export PATH=":$PATH:/usr/local/bin"
-fi
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 MY_NAME=$(uname -n)
 DOTFILES_DIR=~/Develop/global
