@@ -1,8 +1,8 @@
 #!/bin/bash
 set -euxo pipefail
 
-gh extension install seachicken/gh-poi
-gh extension install ymmmtym/gh-gitignore
-gh extension install KoheiKanagu/gh-comment
-gh extension install actions/gh-actions-cache
-gh extension install github/gh-copilot
+gh extension install --force seachicken/gh-poi
+gh extension install --force ymmmtym/gh-gitignore
+gh extension install --force KoheiKanagu/gh-comment
+gh extension install --force actions/gh-actions-cache
+gh extension install --force github/gh-copilot
