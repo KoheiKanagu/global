@@ -146,3 +146,7 @@ fi
 
 # Gemini
 export GEMINI_MODEL="gemini-2.5-flash"
+
+# ssh
+
+ssh-add --apple-use-keychain ~/.ssh/id_rsa >/dev/null 2>&1
