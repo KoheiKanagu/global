@@ -8,3 +8,4 @@ nvm alias default node
 
 npm install --global firebase-tools
 npm install --global gts
+npm install --global @github/copilot
