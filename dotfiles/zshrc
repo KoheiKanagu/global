@@ -104,6 +104,8 @@ setopt INC_APPEND_HISTORY
 # gcloud
 source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
 source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
+export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.config/gcloud/application_default_credentials.json"
+
 
 # Chrome
 export CHROME_EXECUTABLE=$HOME/Develop/global/dotfiles/google-chrome-unsafe.sh
