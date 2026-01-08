@@ -147,7 +147,7 @@ if [ -f "$DOTFILES_DIR/global-private/dotfiles/private.sh" ]; then
 fi
 
 # Gemini
-export GEMINI_MODEL="gemini-2.5-flash"
+export GEMINI_MODEL="gemini-3-flash-preview"
 
 # ssh
 
