@@ -3,7 +3,7 @@
 # Required parameters:
 # @raycast.schemaVersion 1
 # @raycast.title Markdown Image Table
-# @raycast.mode compact
+# @raycast.mode fullOutput
 
 # Optional parameters:
 # @raycast.icon 🖼️
