@@ -106,7 +106,6 @@ source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
 source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
 export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.config/gcloud/application_default_credentials.json"
 
-
 # Chrome
 export CHROME_EXECUTABLE=$HOME/Develop/global/dotfiles/google-chrome-unsafe.sh
 
@@ -152,3 +151,8 @@ export GEMINI_MODEL="gemini-3-flash-preview"
 # ssh
 
 ssh-add --apple-use-keychain ~/.ssh/id_rsa >/dev/null 2>&1
+
+# FVM
+export FVM_CACHE_PATH=$HOME/fvm
+export FVM_GIT_CACHE_PATH=$HOME/fvm
+export FVM_USE_GIT_CACHE=true
