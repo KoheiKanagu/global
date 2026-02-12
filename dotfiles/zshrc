@@ -51,7 +51,7 @@ export JAVA_HOME=/Applications/Android\ Studio.app/Contents/jbr/Contents/Home
 export PATH="$JAVA_HOME/bin:$PATH"
 
 # Flutter
-export PATH="$PATH:$HOME/fvm/default/bin"
+export PATH="$PATH:$HOME/fvm/versions/default/bin"
 ## brewでfvmをインストールしているが、依存しているdartではなくfvmのdartを使いたいので優先する
 export PATH="$HOME/.pub-cache/bin:$PATH"
 
@@ -148,8 +148,3 @@ export GEMINI_MODEL="gemini-3-flash-preview"
 # ssh
 
 ssh-add --apple-use-keychain ~/.ssh/id_rsa >/dev/null 2>&1
-
-# FVM
-export FVM_CACHE_PATH=$HOME/fvm
-export FVM_GIT_CACHE_PATH=$HOME/fvm
-export FVM_USE_GIT_CACHE=true
