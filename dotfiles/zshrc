@@ -5,32 +5,32 @@ MY_NAME=$(uname -n)
 DOTFILES_DIR=~/Develop/global
 
 function brewpush {
-    pushd $DOTFILES_DIR
-    cd global-private
-    git fetch
-    git add .
-    git commit -m "build: update"
-    git push
-    cd ../
+  pushd $DOTFILES_DIR
+  cd global-private
+  git fetch
+  git add .
+  git commit -m "build: update"
+  git push
+  cd ../
 
-    brew bundle dump --force --brews --cask --tap
-    git fetch
-    git add .
-    git commit -m "build: update"
-    git push
-    popd
+  brew bundle dump --force --brews --cask --tap
+  git fetch
+  git add .
+  git commit -m "build: update"
+  git push
+  popd
 }
 
 function brewpull {
-    pushd $DOTFILES_DIR
-    git pull --rebase --recurse-submodules
-    brew bundle install
-    brew bundle cleanup --force
-    ./dart/bootstrap.sh
-    ./node/bootstrap.sh
-    ./gh/bootstrap.sh
-    ./gem/bootstrap.sh
-    popd
+  pushd $DOTFILES_DIR
+  git pull --rebase --recurse-submodules
+  brew bundle install
+  brew bundle cleanup --force
+  ./dart/bootstrap.sh
+  ./node/bootstrap.sh
+  ./gh/bootstrap.sh
+  ./gem/bootstrap.sh
+  popd
 }
 
 export HOMEBREW_BUNDLE_FILE=$DOTFILES_DIR/dotfiles/Brewfile
@@ -85,13 +85,13 @@ alias lr='lsd -Ahl --total-size --tree --group-dirs=last'
 
 # [Finderで開いてるディレクトリへcdするコマンド \- Qiita](https://qiita.com/ucan-lab/items/c4b3466f53eac6f1a8b7)
 cdf() {
-    target=$(osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)')
-    if [ "$target" != "" ]; then
-        cd "$target"
-        pwd
-    else
-        echo 'No Finder window found' >&2
-    fi
+  target=$(osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)')
+  if [ "$target" != "" ]; then
+    cd "$target"
+    pwd
+  else
+    echo 'No Finder window found' >&2
+  fi
 }
 
 # zsh
@@ -139,7 +139,7 @@ export PATH="$PATH:$HOME/.cargo/bin"
 
 # Load private settings
 if [ -f "$DOTFILES_DIR/global-private/dotfiles/private.sh" ]; then
-    . "$DOTFILES_DIR/global-private/dotfiles/private.sh"
+  . "$DOTFILES_DIR/global-private/dotfiles/private.sh"
 fi
 
 # Gemini
