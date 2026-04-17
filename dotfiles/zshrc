@@ -139,12 +139,12 @@ if [ -f "$DOTFILES_DIR/global-private/dotfiles/private.sh" ]; then
   . "$DOTFILES_DIR/global-private/dotfiles/private.sh"
 fi
 
-# Gemini
-export GEMINI_MODEL="gemini-3-flash-preview"
-
 # ssh
-
 ssh-add --apple-use-keychain ~/.ssh/id_rsa >/dev/null 2>&1
 
 # PATH
 export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+
+# Copilot
+
+export COPILOT_CUSTOM_INSTRUCTIONS_DIRS="$HOME/Develop/global/copilot/"
