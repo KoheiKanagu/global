@@ -15,3 +15,9 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[credential "https://github.com"]
+	helper = 
+	helper = !/Users/kingu/Library/Caches/copilot-desktop-gh-2.94.0/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/Users/kingu/Library/Caches/copilot-desktop-gh-2.94.0/gh auth git-credential
