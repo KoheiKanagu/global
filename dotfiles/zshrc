@@ -146,25 +146,32 @@ export PATH="$HOME/.local/bin:$PATH"
 # mise
 eval "$(mise activate zsh)"
 
-# LLM
 
-alias local_llm='
-COPILOT_PROVIDER_BASE_URL=http://localhost:8080/v1 \
-COPILOT_MODEL=LocalLLM \
-COPILOT_PROVIDER_MAX_PROMPT_TOKENS=32000 \
-COPILOT_PROVIDER_MAX_OUTPUT_TOKENS=4096 \
-copilot'
 
 # grok
+alias grok-remote='/Users/kingu/Develop/grok-slack-bridge/scripts/grok-remote'
+alias grok-nosandbox='GROK_SANDBOX=off grok'
 
-alias grok='
-COPILOT_PROVIDER_BASE_URL=https://api.x.ai/v1 \
-COPILOT_MODEL=grok-4.5 \
-COPILOT_PROVIDER_API_KEY=$XAI_API_KEY \
-COPILOT_PROVIDER_MAX_PROMPT_TOKENS=200000 \
-COPILOT_PROVIDER_MAX_OUTPUT_TOKENS=16384 \
-copilot'
+grok() {
+  local token
+  token="$(command gh auth token 2>/dev/null)" || true
+  if [[ -n "$token" ]]; then
+    GH_TOKEN="$token" command grok "$@"
+  else
+    command grok "$@"
+  fi
+}
 
+export GROK_MEMORY=1
+export GROK_SANDBOX=workspace-safe
+export GROK_LSP_TOOLS=1
 
-# opencode
-export PATH=/Users/kingu/.opencode/bin:$PATH
+# >>> grok installer >>>
+export PATH="$HOME/.grok/bin:$PATH"
+fpath=(~/.grok/completions/zsh $fpath)
+autoload -Uz compinit && compinit -C
+# <<< grok installer <<<
+
+# Tart
+
+export TART_HOME='/Volumes/SSD/tart'
