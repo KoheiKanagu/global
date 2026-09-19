@@ -1,97 +1,170 @@
-tap "hashicorp/tap"
+tap "cirruslabs/cli", trusted: { formulae: ["softnet", "tart"] }
+tap "hashicorp/tap", trusted: true
 tap "homebrew/core"
-tap "leoafarias/fvm"
-tap "mobile-dev-inc/tap"
-tap "suzuki-shunsuke/ghalint"
-tap "ynqa/tap"
-tap "zkokaja/brewlet"
+tap "leoafarias/fvm", trusted: true
+tap "mobile-dev-inc/tap", trusted: true
+tap "openclaw/tap"
+tap "rhettbull/osxphotos", "https://github.com/RhetTbull/homebrew-osxphotos", trusted: true
+tap "suzuki-shunsuke/ghalint", trusted: true
+tap "ynqa/tap", trusted: true
+tap "zkokaja/brewlet", trusted: true
+# Static checker for GitHub Actions workflow files
 brew "actionlint"
-brew "libtiff"
-brew "webp"
-brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
 brew "aom"
+# Official Amazon AWS command-line interface
 brew "awscli"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Toolchain of the web
 brew "biome"
+# Core application library for C
 brew "glib"
+# Vector graphics library with cross-device output support
 brew "cairo"
-brew "crudini"
-brew "direnv"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Pack, ship and run any application as a lightweight container
 brew "docker"
+# Docker CLI plugin for extended build capabilities with BuildKit
 brew "docker-buildx"
+# Isolated development environments using Docker
 brew "docker-compose"
+# Docker Credential Helper for Amazon ECR
+brew "docker-credential-helper-ecr"
+# Perl lib for reading and writing EXIF metadata
 brew "exiftool"
+# Collection of GNU find, xargs, and locate
+brew "findutils"
+# Command-line fuzzy finder written in Go
 brew "fzf"
-brew "gemini-cli"
+# GitHub command-line tool
 brew "gh"
+# GitHub Actions linter
 brew "ghalint"
+# Git extension for versioning large files
 brew "git-lfs"
-brew "unbound"
+# GNU implementation of the famous stream editor
+brew "gnu-sed"
+# GNU Transport Layer Security (TLS) Library
 brew "gnutls"
+# Open source programming language to build simple/reliable/efficient software
 brew "go"
+# OpenType text shaping engine
 brew "harfbuzz"
-brew "openjdk"
+# TIFF library and utilities
+brew "libtiff"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
+# Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
+# GNU grep, egrep and fgrep
+brew "grep"
+# Tool to download photos from iCloud
 brew "icloudpd"
+# Tool for managing apps on iOS devices
 brew "ideviceinstaller"
+# Tools and libraries to manipulate images in select formats
+brew "imagemagick"
+# New file format for still image compression
+brew "jpeg-xl"
+# Lightweight and flexible command-line JSON processor
 brew "jq"
+# Library for JPEG-2000 image manipulation
 brew "openjpeg"
+# Image processing and image analysis library
 brew "leptonica"
+# Sophisticated file transfer program
 brew "lftp"
+# Implements the Advanced Access Content System specification
+brew "libaacs"
+# Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
+# Blu-Ray disc playback library for media players like VLC
+brew "libbluray"
+# Light HTTP/1.1 server library
 brew "libmicrohttpd"
+# Postgres C API library
+brew "libpq@17"
+# General purpose TCP-IP emulator
 brew "libslirp"
+# Linux virtual machines
 brew "lima"
+# LLM inference in C/C++
+brew "llama.cpp"
+# Clone of ls with colorful output, file type icons, and more
 brew "lsd"
+# Utility for directing compilation
+brew "make"
+# Mac App Store command-line interface
 brew "mas"
+# Development kit for the Java programming language
+brew "openjdk"
+# Java-based project management
 brew "maven"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
+# Manage multiple Node.js versions
 brew "nvm"
+# Generate clients, server & docs from an OpenAPI spec (v2, v3)
 brew "openapi-generator"
-brew "openjdk@11"
+# Swiss-army knife of markup format conversion
 brew "pandoc"
+# Framework for layout and rendering of i18n text
 brew "pango"
+# Modern Python package and dependency manager supporting the latest PEP standards
 brew "pdm"
-brew "pget"
+# Pins GitHub Actions to full hashes and versions
 brew "pinact"
+# Python dependency management tool
 brew "pipenv"
-brew "postgresql@14"
+# Object-relational database system
+brew "postgresql@17"
+# Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
+# Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
+# Generic machine emulator and virtualizer
 brew "qemu"
+# Ruby version manager
 brew "rbenv"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Safe, concurrent, practical language
 brew "rust"
+# Display and control your Android device
 brew "scrcpy"
+# Autoformat shell script source code
 brew "shfmt"
+# Formatting technology for Swift source code
 brew "swift-format"
+# OCR (Optical Character Recognition) engine
 brew "tesseract"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Tool for creating isolated virtual python environments
 brew "virtualenv"
+# Internet file retriever
 brew "wget"
+# Build server protocol implementation for integrating Xcode with sourcekit-lsp
+brew "xcode-build-server"
+# Generate your Xcode project from a spec file and your folder structure
+brew "xcodegen"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
+# Find security issues in GitHub Actions setups
 brew "zizmor"
+# Shell extension to navigate your filesystem faster
 brew "zoxide"
+# Terraform
 brew "hashicorp/tap/terraform"
+# Simple cli to manage Flutter SDK versions per project
 brew "leoafarias/fvm/fvm"
-brew "mobile-dev-inc/tap/maestro"
+# Google CLI for Gmail, Calendar, Drive, Docs, Sheets, and more
+brew "openclaw/tap/gogcli", trusted: true
+# Export photos from Apple Photos app and query the Photos database
+brew "rhettbull/osxphotos/osxphotos"
+# JSON navigator and interactive filter leveraging jq
 brew "ynqa/tap/jnv"
-cask "alt-tab"
-cask "android-studio"
-cask "appcleaner"
-cask "blackhole-2ch"
-cask "brewlet"
-cask "coteditor"
-cask "font-fira-code"
-cask "fork"
-cask "gcloud-cli"
-cask "google-chrome"
-cask "gpg-suite"
-cask "iina"
-cask "keka"
-cask "keycastr"
-cask "maccy"
-cask "pgadmin4"
-cask "raycast"
-cask "session-manager-plugin"
-cask "slack"
-cask "visual-studio-code@insiders"
-cask "warp"
-cask "xcodes-app"
