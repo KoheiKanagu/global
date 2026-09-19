@@ -2,12 +2,9 @@ tap "cirruslabs/cli", trusted: { formulae: ["softnet", "tart"] }
 tap "hashicorp/tap", trusted: true
 tap "homebrew/core"
 tap "leoafarias/fvm", trusted: true
-tap "mobile-dev-inc/tap", trusted: true
 tap "openclaw/tap"
 tap "rhettbull/osxphotos", "https://github.com/RhetTbull/homebrew-osxphotos", trusted: true
-tap "suzuki-shunsuke/ghalint", trusted: true
 tap "ynqa/tap", trusted: true
-tap "zkokaja/brewlet", trusted: true
 # Static checker for GitHub Actions workflow files
 brew "actionlint"
 # Codec library for encoding and decoding AV1 video streams
