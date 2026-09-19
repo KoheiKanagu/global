@@ -21,3 +21,5 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/Users/kingu/Library/Caches/copilot-desktop-gh-2.94.0/gh auth git-credential
+[gpg]
+	format = ssh
