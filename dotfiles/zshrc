@@ -150,7 +150,6 @@ eval "$(mise activate zsh)"
 
 # grok
 alias grok-remote='/Users/kingu/Develop/grok-slack-bridge/scripts/grok-remote'
-alias grok-nosandbox='GROK_SANDBOX=off grok'
 
 grok() {
   local token
@@ -163,7 +162,6 @@ grok() {
 }
 
 export GROK_MEMORY=1
-export GROK_SANDBOX=workspace-safe
 export GROK_LSP_TOOLS=1
 
 # >>> grok installer >>>
