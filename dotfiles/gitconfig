@@ -4,7 +4,7 @@
 [user]
 	name = KoheiKanagu
 	email = kanagu@kingu.dev
-	signingkey = /Users/kingu/.ssh/id_rsa.pub
+	signingkey = /Users/kingu/.ssh/id_ed25519.pub
 [commit]
 	gpgsign = true
 [fetch]

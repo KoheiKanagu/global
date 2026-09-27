@@ -36,13 +36,14 @@ brewpull
 ## Ruby
 
 ```sh
+brew install rbenv
 rbenv install 3.2.2 && rbenv global 3.2.2
 ```
 
 ## Git
 
 ```sh
-gi macos > ~/.gitignore_global
+curl https://raw.githubusercontent.com/github/gitignore/refs/heads/main/Global/macOS.gitignore > ~/.gitignore_global
 
 rm ~/.gitconfig && ln -s ~/Develop/global/dotfiles/gitconfig ~/.gitconfig
 ```
