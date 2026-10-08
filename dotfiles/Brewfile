@@ -9,8 +9,6 @@ tap "ynqa/tap", trusted: true
 brew "actionlint"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
-# Official Amazon AWS command-line interface
-brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Toolchain of the web
@@ -77,16 +75,10 @@ brew "openjdk"
 brew "openapi-generator"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
-# Modern Python package and dependency manager supporting the latest PEP standards
-brew "pdm"
-# Object-relational database system
-brew "postgresql@17"
 # Ruby version manager
 brew "rbenv"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
-# Safe, concurrent, practical language
-brew "rust"
 # Autoformat shell script source code
 brew "shfmt"
 # Formatting technology for Swift source code
