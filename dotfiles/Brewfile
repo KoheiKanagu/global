@@ -1,6 +1,4 @@
-tap "cirruslabs/cli", trusted: { formulae: ["softnet", "tart"] }
 tap "hashicorp/tap", trusted: true
-tap "homebrew/core"
 tap "leoafarias/fvm", trusted: true
 tap "openclaw/tap"
 tap "rhettbull/osxphotos", "https://github.com/RhetTbull/homebrew-osxphotos", trusted: true
@@ -41,10 +39,12 @@ brew "gnu-sed"
 brew "go"
 # OpenType text shaping engine
 brew "harfbuzz"
-# TIFF library and utilities
-brew "libtiff"
 # Image format providing lossless and lossy compression for web images
 brew "webp"
+# TIFF library and utilities
+brew "libtiff"
+# Development kit for the Java programming language
+brew "openjdk"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
 # GNU grep, egrep and fgrep
@@ -69,8 +69,6 @@ brew "make"
 brew "mise"
 # Manage multiple Node.js versions
 brew "nvm"
-# Development kit for the Java programming language
-brew "openjdk"
 # Generate clients, server & docs from an OpenAPI spec (v2, v3)
 brew "openapi-generator"
 # Swiss-army knife of markup format conversion
