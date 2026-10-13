@@ -1,5 +1,6 @@
 tap "hashicorp/tap", trusted: true
 tap "leoafarias/fvm", trusted: true
+tap "mobile-dev-inc/tap"
 tap "openclaw/tap"
 tap "rhettbull/osxphotos", "https://github.com/RhetTbull/homebrew-osxphotos", trusted: true
 tap "ynqa/tap", trusted: true
@@ -59,8 +60,6 @@ brew "jq"
 brew "libpq@17"
 # Linux virtual machines
 brew "lima"
-# LLM inference in C/C++
-brew "llama.cpp"
 # Clone of ls with colorful output, file type icons, and more
 brew "lsd"
 # Utility for directing compilation
@@ -97,6 +96,8 @@ brew "zoxide"
 brew "hashicorp/tap/terraform"
 # Simple cli to manage Flutter SDK versions per project
 brew "leoafarias/fvm/fvm"
+# The easiest way to automate UI testing for your mobile app
+brew "mobile-dev-inc/tap/maestro", trusted: true
 # Google CLI for Gmail, Calendar, Drive, Docs, Sheets, and more
 brew "openclaw/tap/gogcli", trusted: true
 # Export photos from Apple Photos app and query the Photos database
