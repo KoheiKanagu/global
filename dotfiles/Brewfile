@@ -1,5 +1,5 @@
+tap "btwld/fvm", "https://github.com/btwld/homebrew-fvm.git"
 tap "hashicorp/tap", trusted: true
-tap "leoafarias/fvm", trusted: true
 tap "mobile-dev-inc/tap"
 tap "openclaw/tap"
 tap "rhettbull/osxphotos", "https://github.com/RhetTbull/homebrew-osxphotos", trusted: true
@@ -16,6 +16,8 @@ brew "biome"
 brew "glib"
 # Vector graphics library with cross-device output support
 brew "cairo"
+# Cross-platform make
+brew "cmake"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Pack, ship and run any application as a lightweight container
@@ -28,6 +30,8 @@ brew "docker-credential-helper-ecr"
 brew "exiftool"
 # Collection of GNU find, xargs, and locate
 brew "findutils"
+# Manage Flutter SDK versions per project
+brew "fvm"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
@@ -94,8 +98,6 @@ brew "yq"
 brew "zoxide"
 # Terraform
 brew "hashicorp/tap/terraform"
-# Simple cli to manage Flutter SDK versions per project
-brew "leoafarias/fvm/fvm"
 # The easiest way to automate UI testing for your mobile app
 brew "mobile-dev-inc/tap/maestro", trusted: true
 # Google CLI for Gmail, Calendar, Drive, Docs, Sheets, and more
